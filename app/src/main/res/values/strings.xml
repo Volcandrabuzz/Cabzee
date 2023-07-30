@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">CABZEE</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_phone">Continue with Phone</string>
+    <string name="todo">TODO</string>
+    <string name="with_phone">Continue with Phone</string>
+    <string name="with_google">Continue with Google</string>
+    <string name="to_do">TODO</string>
+    <string name="your_number">YourNumber</string>
+    <string name="e_g_999999999">9999999999</string>
+    <string name="hint">Hint.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Cabzee</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="switch_to_driver">Switch to Driver</string>
+    <string name="settings">Settings</string>
+    <string name="carbzee">Cabzee</string>
+    <string name="driver">Switch To Driver</string>
+    <string name="signout">Sign Out</string>
+    <string name="history">History</string>
+    <string name="CARBZEE">CABZEE</string>
+    <string name="to__do">TODO</string>
+    <string name="tod">TODO</string>
+    <string name="menu">menu</string>
+    <string name="home">HOME</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="oops_no_internet">Oops!! No Internet</string>
+    <string name="retry">Retry</string>
+    <string name="Toast_Message">Enable your settings</string>
+    <string name="password">Password</string>
+</resources>
