@@ -57,7 +57,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBJpRa4dyXCACVtZay5guYXy" />
+            android:value="Your API key here" />
 
         <activity
             android:name=".fragments.HomeFragment"
