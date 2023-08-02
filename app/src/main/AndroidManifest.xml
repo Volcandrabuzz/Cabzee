@@ -60,10 +60,14 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
+<<<<<<< HEAD
             android:value="AIzaSyBJpRa4dyXCACVtZay5guYXyAoOuMSKh2E" />
         <activity
             android:name=".fragments.MyLocation"
             android:exported="false" />
+=======
+            android:value="Your API key here" />
+>>>>>>> origin/main
 
         <activity
             android:name=".fragments.HomeFragment"
