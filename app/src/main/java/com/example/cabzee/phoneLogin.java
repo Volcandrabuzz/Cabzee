@@ -232,16 +232,7 @@ public class phoneLogin extends AppCompatActivity {
 
                 });
     }
-//
-//    @Override
-//    protected  void onStart(){
-//        super.onStart();
-//        FirebaseUser currentuser= FirebaseAuth.getInstance().getCurrentUser();
-//        if(currentuser!=null){
-//            startActivity(new Intent(phoneLogin.this,HomeActivity.class));
-//            finish();
-//        }
-//    }
+
 
 
     @Override

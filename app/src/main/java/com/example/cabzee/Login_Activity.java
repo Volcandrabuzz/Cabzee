@@ -6,6 +6,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class Login_Activity extends AppCompatActivity {
     Button phonebtn ,googlebtn;
 
@@ -26,5 +29,15 @@ public class Login_Activity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    protected  void onStart(){
+        super.onStart();
+        FirebaseUser currentuser= FirebaseAuth.getInstance().getCurrentUser();
+        if(currentuser!=null){
+            startActivity(new Intent(Login_Activity.this,HomeActivity.class));
+            finish();
+        }
     }
 }

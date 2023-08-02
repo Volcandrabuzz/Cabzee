@@ -8,12 +8,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -32,6 +34,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        Fragment fragment=new Fragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,fragment).commit();
+
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activenetwork = cm.getActiveNetworkInfo();
         if (activenetwork == null) {
@@ -42,8 +47,13 @@ public class HomeActivity extends AppCompatActivity {
         ImageView menubtn = findViewById(R.id.imageView2);
 
         FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(v -> Snackbar.make(v, "Replace With Your Own Action", Snackbar.LENGTH_LONG).
-                setAction("Action", null).show());
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "Replace With Your Own Action", Snackbar.LENGTH_LONG).
+                        setAction("Action", null).show();
+            }
+        });
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
 

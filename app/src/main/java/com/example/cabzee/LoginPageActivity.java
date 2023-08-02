@@ -30,7 +30,7 @@ public class LoginPageActivity extends AppCompatActivity {
     Button logInBtn;
     ProgressBar progressBar;
     FirebaseAuth mAuth;
-    TextView gotoRegister;
+    TextView gotoRegister,ForgotPassword;
 
 
     @Override
@@ -43,6 +43,7 @@ public class LoginPageActivity extends AppCompatActivity {
         logInBtn = findViewById(R.id.forgtBtn);
         progressBar = findViewById(R.id.progressbar);
         gotoRegister=findViewById(R.id.gotoRegister);
+        ForgotPassword=findViewById(R.id.forgotPassword);
         progressBar.getIndeterminateDrawable()
                 .setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_IN);
 
@@ -101,6 +102,15 @@ public class LoginPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginPageActivity.this, com.example.cabzee.Activity.class));
+            }
+        });
+
+        ForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginPageActivity.this, forgetPass.class));
+
+
             }
         });
 

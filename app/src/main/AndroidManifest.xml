@@ -31,11 +31,14 @@
             android:name=".DriverviewActivity"
             android:exported="false" />
         <activity
+            android:name=".forgetPass"
+            android:exported="true" />
+        <activity
             android:name=".Activity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LoginPageActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Driver_Registration"
             android:exported="false" />
@@ -53,32 +56,35 @@
         </activity>
         <activity
             android:name=".NoInternet"
-            android:exported="true" />
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBJpRa4dyXCACVtZay5guYXyAoOuMSKh2E" />
+        <activity
+            android:name=".fragments.MyLocation"
+            android:exported="false" />
 
         <activity
             android:name=".fragments.HomeFragment"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".user_profile_activity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".HomeActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_home"
             android:theme="@style/Base.Theme.UberRemake.NoActionBar" />
         <activity
             android:name=".phoneLogin"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".Login_Activity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="nosensor" />
     </application>
 
