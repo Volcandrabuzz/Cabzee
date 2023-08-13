@@ -88,6 +88,9 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
     implementation 'com.google.android.gms:play-services-location:21.0.1'
     implementation 'com.airbnb.android:lottie:5.2.0'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.firebase:geofire-android:3.2.0'
+    implementation 'com.github.aardouin:material-animated-switch:1.0.4'
 
 
 

@@ -69,6 +69,7 @@ public class LoginPageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String mail=email.getText().toString();
                 String pass=password.getText().toString();
+                progressBar.setVisibility(View.VISIBLE);
 
                 if(!mail.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(mail).matches()){
                     if(!pass.isEmpty()){
@@ -76,25 +77,34 @@ public class LoginPageActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(AuthResult authResult) {
                                 Toast.makeText(LoginPageActivity.this,"Login Successful",Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(LoginPageActivity.this,DriverviewActivity.class));
+                                startActivity(new Intent(LoginPageActivity.this,driverLocation.class));
+                                progressBar.setVisibility(View.INVISIBLE);
                                 finish();
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 Toast.makeText(LoginPageActivity.this,"Login Failed",Toast.LENGTH_SHORT).show();
+                                progressBar.setVisibility(View.INVISIBLE);
 
 
                             }
                         });
                     }else{
                         password.setError("Password can not be empty");
+                        progressBar.setVisibility(View.INVISIBLE);
                     }
                 } else if (mail.isEmpty()) {
                     email.setError("Email can not be empty");
-                    
+                    progressBar.setVisibility(View.INVISIBLE);
+
+
                 }else{
                     email.setError("Please enter valid email");
+                    progressBar.setVisibility(View.INVISIBLE);
+
+
+
                 }
             }
         });
